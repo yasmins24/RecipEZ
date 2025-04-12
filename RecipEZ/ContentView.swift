@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  MindSet
+//  RecipEZ
 //
 //  Created by yasmin on 3/21/25.
 //
@@ -13,7 +13,7 @@ struct ContentView: View {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            Text("MindSet")
+            Text("RecipEZ")
                 .font(.largeTitle)
         }
         .padding()

@@ -16,9 +16,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "41F959992D8E90EE00E95721"
-               BuildableName = "MindSet.app"
-               BlueprintName = "MindSet"
-               ReferencedContainer = "container:MindSet.xcodeproj">
+               BuildableName = "RecipEZ.app"
+               BlueprintName = "RecipEZ"
+               ReferencedContainer = "container:RecipEZ.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,6 +29,30 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES"
       shouldAutocreateTestPlan = "YES">
+      <Testables>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "41F959AA2D8E90F000E95721"
+               BuildableName = "RecipEZTests.xctest"
+               BlueprintName = "RecipEZTests"
+               ReferencedContainer = "container:RecipEZ.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "41F959B42D8E90F000E95721"
+               BuildableName = "RecipEZUITests.xctest"
+               BlueprintName = "RecipEZUITests"
+               ReferencedContainer = "container:RecipEZ.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+      </Testables>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -45,9 +69,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "41F959992D8E90EE00E95721"
-            BuildableName = "MindSet.app"
-            BlueprintName = "MindSet"
-            ReferencedContainer = "container:MindSet.xcodeproj">
+            BuildableName = "RecipEZ.app"
+            BlueprintName = "RecipEZ"
+            ReferencedContainer = "container:RecipEZ.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -62,9 +86,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "41F959992D8E90EE00E95721"
-            BuildableName = "MindSet.app"
-            BlueprintName = "MindSet"
-            ReferencedContainer = "container:MindSet.xcodeproj">
+            BuildableName = "RecipEZ.app"
+            BlueprintName = "RecipEZ"
+            ReferencedContainer = "container:RecipEZ.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

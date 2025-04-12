@@ -1,13 +1,13 @@
 //
-//  MindSetUITestsLaunchTests.swift
-//  MindSetUITests
+//  RecipEZUITestsLaunchTests.swift
+//  RecipEZUITests
 //
 //  Created by yasmin on 3/21/25.
 //
 
 import XCTest
 
-final class MindSetUITestsLaunchTests: XCTestCase {
+final class RecipEZUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

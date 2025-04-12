@@ -1,6 +1,6 @@
 //
 //  UrlBuilder.swift
-//  MindSet
+//  RecipEZ
 //
 //  Created by yasmin on 3/23/25.
 //

@@ -21,7 +21,7 @@ jobs:
           echo $status $conclusion
 
       - name: Check statuses of all repos
-        if: ${{ pickmymeals_status.outputs.conclusion != 'success' }} # Replace with your desired condition
+        if: ${{ steps.pickmymeals_status.outputs.conclusion != 'success' }} # Replace with your desired condition
         uses: actions/github-script@v7
         with:
           script: |

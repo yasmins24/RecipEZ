@@ -26,7 +26,7 @@ jobs:
           echo "status=$STATUS" >> "$GITHUB_OUTPUT"
 
       - name: Check statuses of all repos
-        if: ${{ steps.pickmymeals_status.outputs.conclusion }} != 'success'
+        if: ${{ steps.pickmymeals_status.outputs.conclusion }} == 'success'
         run: |
             echo "Pick my meals: Run completed with a status of: ${{ steps.pickmymeals_status.outputs.conclusion }}."
             exit 1

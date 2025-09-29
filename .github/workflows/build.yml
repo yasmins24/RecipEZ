@@ -15,7 +15,7 @@ jobs:
         run: |
           response=$(curl -H "Authorization: token ${{ secrets.PAT }}" \
           https://api.github.com/repos/OWNER/REPO/actions/workflows//build.yml/runs)
-          VALUE=$(echo "${{ response }} " | jq -r '.workflow_runs')
+          VALUE=$(echo "$response" | jq -r '.workflow_runs')
           echo VALUE
           echo $VALUE
       # - name: Trigger build

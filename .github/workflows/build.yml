@@ -19,8 +19,8 @@ jobs:
 
           echo $response 
           
-          status=$(echo response | jq -r '.status')
-          conclusion=$(echo response | jq -r '.conclusion')
+          status=$(echo $response | jq -r '.status')
+          conclusion=$(echo $response | jq -r '.conclusion')
 
           echo "conclusion=$CONCLUSION" >> "$GITHUB_OUTPUT"
           echo "status=$STATUS" >> "$GITHUB_OUTPUT"

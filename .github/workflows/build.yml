@@ -14,9 +14,8 @@ jobs:
       - name: Get status
         run: |
           response=$(curl -H "Authorization: token ${{ secrets.PAT }}" \
-          https://api.github.com/repos/yasmins24/PickMyMeals/actions/workflows//build.yml/runs)
-          VALUE=$(echo "$response" | jq -r '.workflow_runs')
-          echo $VALUE
+          https://api.github.com/repos/yasmins24/PickMyMeals/actions/workflows//build.yml/runs?per_page=1 | jq -r '.workflow_runs[0].status, .workflow_runs[0].conclusion')
+          echo $response
       # - name: Trigger build
       #   run: |
       #    curl -L \

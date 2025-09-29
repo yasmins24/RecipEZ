@@ -27,9 +27,7 @@ jobs:
 
       - name: Check statuses of all repos
         if: ${{ steps.pickmymeals_status.outputs.conclusion }} != 'success'
-        uses: actions/github-script@v7
-        with:
-          script: |
+        run: |
             echo "Pick my meals: Run completed with a status of: ${{ steps.pickmymeals_status.outputs.conclusion }}."
             exit 1
 

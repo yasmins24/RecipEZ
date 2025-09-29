@@ -34,11 +34,19 @@ jobs:
     if: failure()
     runs-on: macos-latest
 
+    steps:
+      - name: Failure
+        run: echo failure example
+
   success:
     name: handle success
     needs: build
     if: success()
     runs-on: macos-latest
+
+    steps:
+      - name: Success
+        run: echo success example
 
           
       # | jq -r '.workflow_runs')

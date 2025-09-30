@@ -7,7 +7,7 @@ repo=$2
 response=$(curl -f -H "Authorization: token $token" \
         https://api.github.com/repos/yasmins24/$repo/actions/workflows/build.yml/runs?per_page=1 | jq -r '.workflow_runs[0]')
 
-if [ $? -eq 0 ]; then
+if [ $? -ne 0 ]; then
   echo "Getting workflow status for $repo failed."
   exit 1
 fi

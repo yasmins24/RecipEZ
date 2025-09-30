@@ -10,16 +10,16 @@ response=$(curl -f -H "Authorization: token $token" \
 if [ $? -ne 0 ]; then
   echo "Getting workflow status for $repo failed."
   exit 1
-fi
-
-  status=$(echo $response | jq -r '.status')
+else
+status=$(echo $response | jq -r '.status')
   conclusion=$(echo $response | jq -r '.conclusion')
 
   echo "$repo-conclusion=$conclusion" >> "$GITHUB_OUTPUT"
   echo "$repo-status=$status" >> "$GITHUB_OUTPUT"
-  echo $response 
+ 
   echo $status
   echo $conclusion
+fi
 
 
   #echo "Getting workflow status for $repo failed."

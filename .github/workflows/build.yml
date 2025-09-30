@@ -12,6 +12,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Get status for pick my meals build
+        shell: bash
         id: pickmymeals_status
         run: |
           set -o pipefail

@@ -1,0 +1,15 @@
+name: iOS test
+
+on:
+  push:
+    branches: [ "release/**" ]
+
+jobs:
+  test:
+    name: Testing
+    runs-on: macos-latest
+
+    steps:
+      - name: Test
+        run: echo Running a test
+          

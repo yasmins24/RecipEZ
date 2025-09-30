@@ -18,7 +18,7 @@ jobs:
            echo Exits with a status code of $?
 
       - name: Check statuses of all repos
-        if: steps.pickmymeals_status.outputs.PickMyMeals-conclusion == 'success'
+        if: steps.pickmymeals_status.outputs.PickMyMeals-conclusion != 'success'
         run: |
             echo "Pick my meals: Run completed with a status of: ${{ steps.pickmymeals_status.outputs.PickMyMeals-conclusion }}."
 

@@ -14,7 +14,7 @@ if [ $? -eq 0 ]; then
 
   echo "$repo-conclusion=$conclusion" >> "$GITHUB_OUTPUT"
   echo "$repo-status=$status" >> "$GITHUB_OUTPUT"
-
+  echo $response 
   echo $status
   echo $conclusion
 else

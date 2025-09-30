@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -o pipefail
+
 # Grab auth token and repository name
 token=$1
 repo=$2

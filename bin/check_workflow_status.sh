@@ -1,5 +1,5 @@
 #!/bin/bash
-
+set -e
 # Grab auth token and repository name
 token=$1
 repo=$2

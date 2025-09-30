@@ -9,6 +9,7 @@ response=$(curl -f -H "Authorization: token $token" \
 
 if [ $? -ne 0 ]; then
   echo "Getting workflow status for $repo failed."
+  exit 1
 fi
         
 status=$(echo $response | jq -r '.status')

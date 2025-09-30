@@ -14,7 +14,7 @@ jobs:
       - name: Get status for pick my meals build
         id: pickmymeals_status
         run: |
-           bash -e ./bin/check_workflow_status.sh ${{ secrets.PAT }} "PickMyMeals"
+           bash -e ./bin/check_workflow_status.sh ${{ secrets.PAT }} "PickMyMeal"
            echo Exits with a status code of $?
 
       - name: Check statuses of all repos

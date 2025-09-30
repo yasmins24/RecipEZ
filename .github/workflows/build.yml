@@ -14,6 +14,7 @@ jobs:
       - name: Get status for pick my meals build
         id: pickmymeals_status
         run: |
+          #!/bin/bash
           set -e
           ./bin/check_workflow_status.sh ${{ secrets.PAT }} "PickMyMeal"
 

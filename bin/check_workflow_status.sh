@@ -16,3 +16,6 @@ conclusion=$(echo $response | jq -r '.conclusion')
 
 echo "$repo-conclusion=$conclusion" >> "$GITHUB_OUTPUT"
 echo "$repo-status=$status" >> "$GITHUB_OUTPUT"
+
+echo $status
+echo $conclusion

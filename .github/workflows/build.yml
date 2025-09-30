@@ -15,8 +15,9 @@ jobs:
         shell: bash
         id: pickmymeals_status
         run: |
-          set -e
-          ./bin/check_workflow_status.sh ${{ secrets.PAT }} "PickMyMeal"
+           set -euo pipefail
+           ./bin/check_workflow_status.sh ${{ secrets.PAT }} "PickMyMeal"
+           echo Exits with a status code of $?
 
       - name: Check statuses of all repos
         if: steps.pickmymeals_status.outputs.PickMyMeals-conclusion == 'success'

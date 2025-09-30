@@ -13,12 +13,12 @@ jobs:
         uses: actions/checkout@v4
       - name: Get status for pick my meals build
         id: pickmymeals_status
-        run: ./bin/check_workflow_status.sh ${{ secrets.PAT }}
+        run: ./bin/check_workflow_status.sh ${{ secrets.PAT }} "PickMyMeals"
 
       - name: Check statuses of all repos
-        if: steps.pickmymeals_status.outputs.conclusion != 'success'
+        if: steps.pickmymeals_status.outputs.PickMyMeals-conclusion != 'success'
         run: |
-            echo "Pick my meals: Run completed with a status of: ${{ steps.pickmymeals_status.outputs.conclusion }}."
+            echo "Pick my meals: Run completed with a status of: ${{ steps.pickmymeals_status.outputs.PickMyMeals-conclusion }}."
 
   failure:
     name: handle failure

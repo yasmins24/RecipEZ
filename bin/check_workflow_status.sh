@@ -6,7 +6,7 @@ set -o pipefail
 token=$1
 repo=$2
 
-response=$(curl -H -f "Authorization: token $token" \
+response=$(curl -f -H "Authorization: token $token" \
         https://api.github.com/repos/yasmins24/$repo/actions/workflows/build.yml/runs?per_page=1 | jq -r '.workflow_runs[0]')
 
 if [ $? -ne 0 ]; then

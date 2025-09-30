@@ -12,8 +12,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Get status for pick my meals build
+        shell: bash
         id: pickmymeals_status
         run: |
+          set -e
           ./bin/check_workflow_status.sh ${{ secrets.PAT }} "PickMyMeal"
 
       - name: Check statuses of all repos
